@@ -1,4 +1,3 @@
 repository "2D Rougelite/2D Rougelite@1375916319399@cloud"
   path "/"
-    br "/main"
-    co "/main"
+    smartbranch "/main/Player Controls"
