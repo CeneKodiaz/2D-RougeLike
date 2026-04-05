@@ -1,21 +1,21 @@
 {
-    "name": "InputSystem_Actions",
+    "version": 1,
+    "name": "Player Actions",
     "maps": [
         {
             "name": "Player",
-            "id": "df70fa95-8a34-4494-b137-73ab6b9c7d37",
+            "id": "2f7fd64f-8f0e-4534-9f1f-c3bcee974a92",
             "actions": [
                 {
                     "name": "Move",
                     "type": "Value",
-                    "id": "351f2ccd-1f9f-44bf-9bec-d62ac5c5f408",
+                    "id": "159002f4-bf74-4241-83a9-2f970ac395c0",
                     "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
                 },
                 {
-<<<<<<< Updated upstream:2D Rougelite/Assets/InputSystem_Actions.inputactions
                     "name": "Look",
                     "type": "Value",
                     "id": "6b444451-8a00-4d00-a97e-f47457f736a8",
@@ -83,12 +83,6 @@
                     "type": "Button",
                     "id": "641cd816-40e6-41b4-8c3d-04687c349290",
                     "expectedControlType": "Button",
-=======
-                    "name": "Jump",
-                    "type": "Button",
-                    "id": "389a245b-f9a7-4c3c-8452-27e4f364ea7a",
-                    "expectedControlType": "",
->>>>>>> Stashed changes:2D Rougelite/Assets/Input/Player Actions.inputactions
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
@@ -207,7 +201,6 @@
                 },
                 {
                     "name": "",
-<<<<<<< Updated upstream:2D Rougelite/Assets/InputSystem_Actions.inputactions
                     "id": "1635d3fe-58b6-4ba9-a4e2-f4b964f6b5c8",
                     "path": "<XRController>/{Primary2DAxis}",
                     "interactions": "",
@@ -389,20 +382,12 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard&Mouse",
-=======
-                    "id": "5a003c02-55b0-4bee-b7ce-9c1f9ac40f13",
-                    "path": "<Keyboard>/space",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": ";Keyboard&Mouse",
->>>>>>> Stashed changes:2D Rougelite/Assets/Input/Player Actions.inputactions
                     "action": "Jump",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "",
-<<<<<<< Updated upstream:2D Rougelite/Assets/InputSystem_Actions.inputactions
                     "id": "daba33a1-ad0c-4742-a909-43ad1cdfbeb6",
                     "path": "<Gamepad>/buttonSouth",
                     "interactions": "",
@@ -488,27 +473,17 @@
                     "action": "Crouch",
                     "isComposite": false,
                     "isPartOfComposite": false
-=======
-                    "id": "6e56279d-0a1f-4686-aaa9-5465c01f527b",
-                    "path": "<Gamepad>/buttonSouth",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": ";Gamepad",
-                    "action": "Jump",
-                    "isComposite": false,
-                    "isPartOfComposite": false
->>>>>>> Stashed changes:2D Rougelite/Assets/Input/Player Actions.inputactions
                 }
             ]
         },
         {
             "name": "UI",
-            "id": "272f6d14-89ba-496f-b7ff-215263d3219f",
+            "id": "6f878ad7-9f50-44a5-8119-9cf62056ef4d",
             "actions": [
                 {
                     "name": "Navigate",
                     "type": "PassThrough",
-                    "id": "c95b2375-e6d9-4b88-9c4c-c5e76515df4b",
+                    "id": "a3a67df1-f557-40d2-9781-d48dd623fcc9",
                     "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": "",
@@ -517,7 +492,7 @@
                 {
                     "name": "Submit",
                     "type": "Button",
-                    "id": "7607c7b6-cd76-4816-beef-bd0341cfe950",
+                    "id": "4e525c34-fe85-4511-ac7d-24fe0c9bd399",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -526,7 +501,7 @@
                 {
                     "name": "Cancel",
                     "type": "Button",
-                    "id": "15cef263-9014-4fd5-94d9-4e4a6234a6ef",
+                    "id": "ee7a9975-5422-4933-b3a7-7761206ead6a",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -535,7 +510,7 @@
                 {
                     "name": "Point",
                     "type": "PassThrough",
-                    "id": "32b35790-4ed0-4e9a-aa41-69ac6d629449",
+                    "id": "92ac16a1-9483-4ec0-a753-c99fe96c09a9",
                     "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": "",
@@ -544,17 +519,17 @@
                 {
                     "name": "Click",
                     "type": "PassThrough",
-                    "id": "3c7022bf-7922-4f7c-a998-c437916075ad",
+                    "id": "40dde756-de7e-4f2a-81bf-9dadb9f11978",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
                 },
                 {
-                    "name": "RightClick",
+                    "name": "ScrollWheel",
                     "type": "PassThrough",
-                    "id": "44b200b1-1557-4083-816c-b22cbdf77ddf",
-                    "expectedControlType": "Button",
+                    "id": "811bd4c3-ca20-42d5-b44f-7aa84cc3d2e8",
+                    "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
@@ -562,17 +537,17 @@
                 {
                     "name": "MiddleClick",
                     "type": "PassThrough",
-                    "id": "dad70c86-b58c-4b17-88ad-f5e53adf419e",
+                    "id": "9aa2670b-8f8c-4689-9fbf-f815f5b31068",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
                 },
                 {
-                    "name": "ScrollWheel",
+                    "name": "RightClick",
                     "type": "PassThrough",
-                    "id": "0489e84a-4833-4c40-bfae-cea84b696689",
-                    "expectedControlType": "Vector2",
+                    "id": "99ef1422-7ada-4787-995b-f33f49ee44e3",
+                    "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
@@ -580,7 +555,7 @@
                 {
                     "name": "TrackedDevicePosition",
                     "type": "PassThrough",
-                    "id": "24908448-c609-4bc3-a128-ea258674378a",
+                    "id": "b031df70-4820-46d2-b0f0-e00378d67888",
                     "expectedControlType": "Vector3",
                     "processors": "",
                     "interactions": "",
@@ -589,7 +564,7 @@
                 {
                     "name": "TrackedDeviceOrientation",
                     "type": "PassThrough",
-                    "id": "9caa3d8a-6b2f-4e8e-8bad-6ede561bd9be",
+                    "id": "9179be43-328e-461a-a0ef-dea5386ccd44",
                     "expectedControlType": "Quaternion",
                     "processors": "",
                     "interactions": "",
@@ -973,23 +948,23 @@
                 },
                 {
                     "name": "",
-                    "id": "4c191405-5738-4d4b-a523-c6a301dbf754",
-                    "path": "<Mouse>/rightButton",
+                    "id": "24066f69-da47-44f3-a07e-0015fb02eb2e",
+                    "path": "<Mouse>/middleButton",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Keyboard&Mouse",
-                    "action": "RightClick",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "MiddleClick",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "",
-                    "id": "24066f69-da47-44f3-a07e-0015fb02eb2e",
-                    "path": "<Mouse>/middleButton",
+                    "id": "4c191405-5738-4d4b-a523-c6a301dbf754",
+                    "path": "<Mouse>/rightButton",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Keyboard&Mouse",
-                    "action": "MiddleClick",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "RightClick",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
