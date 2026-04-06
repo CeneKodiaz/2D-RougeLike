@@ -1769,7 +1769,7 @@ MonoBehaviour:
   wallJumpForce: 4
   wallJumpDirection: {x: 1, y: 1.5}
   wallJumpDuration: 0.2
-  wallSlideSpeed: -3
+  wallSlideSpeed: -1
 --- !u!1 &2017089708
 GameObject:
   m_ObjectHideFlags: 0
