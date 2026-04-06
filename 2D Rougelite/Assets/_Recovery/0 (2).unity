@@ -1756,8 +1756,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
   rb: {fileID: 1916838164}
-  moveSpeed: 4
-  jumpForce: 6
+  moveSpeed: 5
+  jumpForce: 5
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
@@ -1769,7 +1769,7 @@ MonoBehaviour:
   wallJumpForce: 4
   wallJumpDirection: {x: 1, y: 1.5}
   wallJumpDuration: 0.2
-  wallSlideSpeed: -3
+  wallSlideSpeed: -2
 --- !u!1 &2017089708
 GameObject:
   m_ObjectHideFlags: 0

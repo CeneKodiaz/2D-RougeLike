@@ -116,7 +116,7 @@ public class PlayerController : MonoBehaviour
     {
         if (isWallSliding)
         {
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x, Mathf.Clamp(rb.linearVelocity.y, wallSlideSpeed, float.MaxValue)); // Limit downward speed
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, Mathf.Clamp(rb.linearVelocity.y, wallSlideSpeed, wallSlideSpeed)); // Limit downward speed
         }
     }
     #endregion
@@ -149,6 +149,40 @@ public class PlayerController : MonoBehaviour
             wallLayer);
 
         isWallSliding = isTouchingWall && !isGrounded; // Wall sliding only when not grounded
+    }
+    #endregion
+
+    #region Enemy Interaction
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Evil"))
+        {
+            // Check if the player is above the enemy's top
+            float enemyTop = collision.transform.position.y + collision.collider.bounds.size.y / 2;
+            if (transform.position.y > enemyTop)
+            {
+                // Player is above the enemy, perform a stomp
+                StompEnemy(collision.gameObject);
+            }
+            else
+            {
+                // Player is below or at the same level as the enemy, take damage
+                TakeDamage();
+            }
+        }
+    }
+
+    private void StompEnemy(GameObject enemy)
+    {
+        // Apply an upward force to the player for a bounce effect
+        rb.AddForce(Vector2.up * jumpForce * 2, ForceMode2D.Impulse);
+        // Destroy the enemy or apply damage to it
+        Destroy(enemy);
+    }
+
+    private void TakeDamage()
+    {
+        Destroy(gameObject); // For demonstration, destroy the player on damage
     }
     #endregion
 }
