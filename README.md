@@ -1,2 +1,2 @@
-# 2D-RougeLike
-First real 2D game.
+# The Forsaken King
+A 2D rougelike where you play as Tantalus seeking to get revenge on your father.
