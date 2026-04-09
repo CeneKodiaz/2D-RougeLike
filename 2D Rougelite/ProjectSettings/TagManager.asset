@@ -4,9 +4,10 @@
 TagManager:
   serializedVersion: 3
   tags:
-  - Evil
   - Ground
   - Wall
+  - Killable
+  - Damageable
   layers:
   - Default
   - TransparentFX
