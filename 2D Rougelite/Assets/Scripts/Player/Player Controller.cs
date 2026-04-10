@@ -227,7 +227,7 @@ public class PlayerController : MonoBehaviour
             0f,
             wallLayer);
 
-        isWallSliding = isTouchingWall && !isGrounded; // Wall sliding only when not grounded
+        isWallSliding = isTouchingWall && !isGrounded && !isCrouched; // Wall sliding only when not grounded
     }
     #endregion
 
